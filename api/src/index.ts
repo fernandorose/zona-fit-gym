@@ -1,12 +1,14 @@
 import express from "express";
 import pool from "./postgres/connection";
 
+import ProductsRouter from "./routes/products.route";
+
 const app = express();
 const PORT = 3000;
 
-app.get("/", (req, res) => {
-  res.send("Hello World");
-});
+app.use(express.json());
+
+app.use("/api", ProductsRouter);
 
 app.listen(PORT, () => {
   console.log(`Server running on http://localhost:${PORT}/`);
