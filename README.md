@@ -1,6 +1,6 @@
 <div align="center">
   <h1>
-    <b>Zona Fit GYM</b>
+    <img src="./public/zonafit.png"/>
   </h1>
 </div>
 
